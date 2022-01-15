@@ -1,0 +1,17 @@
+
+
+.image-1 {
+    position: relative;
+    z-index: 1;
+    width: 600px;
+    margin-left: -50px;
+    margin-right: auto;
+
+}
+
+.image-2 {
+    position: absolute;
+    z-index: 3;
+    bottom: -5px;
+    right: 0px;
+}

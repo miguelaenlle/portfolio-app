@@ -7,7 +7,7 @@ const Skills = () => {
 
     return (
         <Wrapper compact = {true}>
-            <SectionHeader content = {'Skills'} />
+            <SectionHeader content = {'Skills'} hasLine = {true}/>
             <div className = {classes['left-stack']}>
                 <SkillList items = {skills[1]} />
                 <SkillList items = {skills[2]} />

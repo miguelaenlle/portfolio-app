@@ -5,6 +5,7 @@ import EmailButton from "../components/buttons/EmailButton";
 import SocialIcon from "../components/buttons/SocialIcon";
 import ViewLink from "../components/buttons/ViewLink";
 import Wrapper from "./Wrapper";
+import SocialIcons from "../components/groups/SocialIcons";
 
 import { aboutData } from "../constants/about-info";
 import LinkIcon from "../components/icons/LinkIcon";
@@ -17,16 +18,13 @@ const About = () => {
         <Subheader content={aboutData.subheader} />
         <div className={classes["left-stack"]}>
           <p className={classes["mono-text"]}>{aboutData.location}</p>
-          <EmailButton text={aboutData.email} mailto={aboutData.email} />
+          <EmailButton text={aboutData.email} mailto={aboutData.email} mono = {false} />
         </div>
         <div className={classes["body-text-container"]}>
           <p className={classes["text"]}>{aboutData.description}</p>
         </div>
-        <div className={classes["social"]}>
-          {aboutData.socials.map((social) => (
-            <SocialIcon key={social} network={social} />
-          ))}
-        </div>
+        <SocialIcons socials={aboutData.socials} />
+
         <ViewLink
           text={"View Resume"}
           link={aboutData.resumeLink}

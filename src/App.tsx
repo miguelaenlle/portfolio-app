@@ -9,9 +9,9 @@ function App() {
   return (
     <div className = {"wrapper"}>
       <About/>
-      <ContactMe/>
       <Skills/>
       <Work/>
+      <ContactMe/>
     
     </div>
   );

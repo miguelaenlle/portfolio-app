@@ -1,6 +1,14 @@
 
-.email-content {
+.email-content-mono {
     font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3C6E71;
+    text-decoration: none;
+    
+}
+.email-content {
+    font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #3C6E71;

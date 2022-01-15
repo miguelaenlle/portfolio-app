@@ -19,7 +19,7 @@ export const projects: Project[] = [
     "#",
     true,
     [swift, stripe, firebase, node],
-    false
+    true
   ),
   new Project(
     "Hypertrade",
@@ -29,7 +29,7 @@ export const projects: Project[] = [
     "#",
     false,
     [react, aws, python, node],
-    true
+    false
   ),
   new Project(
     "Scatter",
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     "#",
     true,
     [swift, firebase, airtables],
-    false
+    true
   ),
   new Project(
     "Tidynote",
@@ -49,6 +49,6 @@ export const projects: Project[] = [
     "#",
     true,
     [swift, firebase],
-    true
+    false
   )
 ];

@@ -1,5 +1,7 @@
 .project-wrapper {
     margin: 2.5rem 0 ;
+    margin-right: 5rem;
+    width: 40vw;
 }
 .header-text {
     font-family: 'Rubik', sans-serif;
@@ -14,4 +16,11 @@
     font-weight: 400;
     color: #8D8C8C;
     text-align: left; 
+}
+.left-stack {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: top;
+    margin-bottom: 10rem;
 }
