@@ -1,0 +1,11 @@
+.wrapper {
+    padding: 7.5rem 5rem;
+    max-width: 1500px;
+}
+.wrapper-compact {
+    max-width: 1500px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2.5rem
+
+}

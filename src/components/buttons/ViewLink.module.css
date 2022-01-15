@@ -1,0 +1,16 @@
+.link {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3C6E71;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}

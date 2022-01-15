@@ -1,0 +1,44 @@
+.text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7E7E7E;
+    margin-right: 1rem;
+}
+
+.left-stack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left-stack > div {
+    margin: 0 0.5rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0px;
+    margin-top: 3rem;
+}
+
+.social > div {
+    margin-right: 10px
+}
+
+.body-text-container {
+    width: 50%;
+    min-width: 500px;
+    margin-left: 0px;
+    margin-right: auto;
+    
+}
+
+.header-background {
+    background-image: linear-gradient(#F8FBFB, #ECF1F1);
+    margin: 0px
+}

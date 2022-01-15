@@ -1,0 +1,12 @@
+.left-stack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+
+}
+
+.left-stack > div {
+    margin-right: 1rem
+}
