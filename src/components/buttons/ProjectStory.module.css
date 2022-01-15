@@ -1,0 +1,27 @@
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    background-color: rgba(111, 111, 111, 0.1);
+    padding: 0.25rem 1.5rem;
+    border-color: rgba(0,0,0,0);
+    border-radius: 10px;
+    width: auto;
+    
+
+}
+
+.button-wrapper > div {
+    margin-left: 0.5rem;
+}
+
+.button-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #767676;
+    text-align: left;
+}

@@ -5,6 +5,13 @@
     color: #7E7E7E;
     margin-right: 1rem;
 }
+.mono-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7E7E7E;
+    margin-right: 1rem;
+}
 
 .left-stack {
     display: flex;

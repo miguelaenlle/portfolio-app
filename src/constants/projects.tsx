@@ -1,11 +1,7 @@
-import Skill from "../models/Skill";
 import Project from "../models/Project";
 import {
   swift,
-  typescript,
   react,
-  reactNative,
-  next,
   firebase,
   aws,
   node,

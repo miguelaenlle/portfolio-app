@@ -1,6 +1,17 @@
-.project-header {
+.project-wrapper {
+    margin: 2.5rem 0 ;
+}
+.header-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #4B4B4B;
+    text-align: left;   
+}
+.text {
     font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    color: #4B4B4B;
+    color: #8D8C8C;
+    text-align: left; 
 }
