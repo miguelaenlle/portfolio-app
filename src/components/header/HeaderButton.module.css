@@ -1,0 +1,13 @@
+.button {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #898989;
+    margin-right: 2rem;
+}
+.selected {
+    color: black;
+}
+.button:hover {
+    color: #00a8ff;
+}
