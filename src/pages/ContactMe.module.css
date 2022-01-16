@@ -26,3 +26,11 @@
     margin-right: 1rem;
     width: 50%;
   }
+  .mono-text {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7e7e7e;
+
+    margin-top: 5rem;
+}

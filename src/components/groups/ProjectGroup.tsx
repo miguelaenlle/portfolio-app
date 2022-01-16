@@ -28,9 +28,9 @@ const ProjectGroup: React.FC<{ project: Project }> = (props) => {
             liveLink={props.project.demoLink}
             videoLink={props.project.videoLink}
           />
+          <ProjectStory />
 
           <SkillList items={props.project.skills} runsOnce = {true}/>
-          <ProjectStory />
         </div>
         {!props.project.right && mockup}
       </div>

@@ -5,14 +5,26 @@
     align-items: center;
     justify-content: flex-start;
     margin-top: 1.5rem;
-    background-color: rgba(111, 111, 111, 0.1);
+    background-image: linear-gradient(
+    to bottom,
+    rgba(60, 110, 113, 0.1),
+    rgba(60, 110, 113, 0.05)
+  );
     padding: 0.25rem 1.5rem;
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0, 0, 0);
     border-radius: 10px;
     width: auto;
-    
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s 0s ease;
+    color: #4B4B4B;
+}
+
+.button-wrapper:hover {
+    background-color: rgba(60, 110, 113, 0.5);
+    transition: all 0.5s 0s ease;
 
 }
+
 
 .button-wrapper > div {
     margin-left: 0.5rem;
@@ -22,6 +34,8 @@
     font-family: 'Rubik', sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
-    color: #767676;
     text-align: left;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #8D8C8C;
 }

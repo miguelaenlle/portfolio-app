@@ -1,8 +1,8 @@
 .button {
     font-family: 'Rubik', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    color: #898989;
+    color: #b6b5b5;
     margin-right: 2rem;
     transition: all 0.5s 0s ease;
     background-color: rgba(0,0,0,0);
