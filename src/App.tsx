@@ -89,12 +89,13 @@ function App() {
     return list
   };
 
+
   const handleSelectedPage = (page: string) => {
     setSelectedPage(page);
     console.log(page);
     const locations = fetchAllLocations();
     const location = locations[page];
-    window.scrollTo(0, location);
+    window.scrollTo({top: location, behavior: 'smooth'});
   };
 
   return (

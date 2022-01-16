@@ -1,12 +1,12 @@
 .skill-text {
     font-family: 'Rubik', sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 400;
     color: #4B4B4B;
 }
 .icon {
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-right: 0.5rem;
 }
 .left-stack {

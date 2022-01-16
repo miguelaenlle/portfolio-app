@@ -4,10 +4,14 @@
     font-weight: 400;
     color: #898989;
     margin-right: 2rem;
+    transition: all 0.5s 0s ease;
+    background-color: rgba(0,0,0,0);
+    border: none;
 }
 .selected {
     color: black;
+    transition: all 0.5s 0s ease;
 }
 .button:hover {
-    color: #00a8ff;
+    color: black;
 }

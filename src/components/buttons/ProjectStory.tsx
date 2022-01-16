@@ -4,7 +4,7 @@ import ContinueIcon from "../icons/ContinueIcon";
 const ProjectStory: React.FC<{}> = (props) => {
     return (
         <button className = {classes['button-wrapper']}>
-            <p className = {classes['button-text']}>Project Story</p>
+            <p className = {classes['button-text']}>View Project</p>
             <ContinueIcon/>
         </button>
     );

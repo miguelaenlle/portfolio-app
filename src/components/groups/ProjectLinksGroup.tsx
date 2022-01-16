@@ -1,4 +1,6 @@
 import GoToIcon from "../icons/GoToIcon";
+import VideoIcon from "../icons/VideoIcon";
+
 import ViewLink from "../buttons/ViewLink";
 import classes from "./ProjectLinksGroup.module.css"
 
@@ -17,7 +19,7 @@ const ProjectLinksGroup: React.FC<{isMobile: boolean, liveLink: string, videoLin
                 text={"Watch Full Platform Demo"}
                 link={props.videoLink}
                 reversed={false}
-                icon={<GoToIcon />}
+                icon={<VideoIcon />}
             />
         </div>
     );

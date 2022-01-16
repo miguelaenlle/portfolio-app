@@ -1,6 +1,6 @@
 .link-reversed {
     font-family: 'Rubik', sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 400;
     color: #3C6E71;
     text-decoration: none;
@@ -8,12 +8,12 @@
 }
 .link {
     font-family: 'Rubik', sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 400;
     color: #3C6E71;
     text-decoration: none;
     margin-left: 0.5rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 .link-container {

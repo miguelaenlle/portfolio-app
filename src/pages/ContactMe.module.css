@@ -1,11 +1,28 @@
+.section {
+  background-image: url("./svgs/background-triangle.svg"),
+    linear-gradient(#ffffff, #f8fbfb);
+  background-size: cover;
+  margin: 0px;
+
+}
+
 .left-stack {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
 }
 
 .left-stack > div {
-    margin: 0 0.5rem;
+  margin: 0 0.5rem;
 }
+
+.text {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #7e7e7e;
+    margin-right: 1rem;
+    width: 50%;
+  }

@@ -8,10 +8,9 @@ const Mockup: React.FC<{ mockup: string }> = (props) => {
   return (
     <div className={classes["content-wrapper"]}>
       {props.mockup === "Rentr" && <RentrMockup />}
-        {props.mockup === "Hypertrade" && <HypertradeMockup />}
-        {props.mockup === "Scatter" && <ScatterMockup />}
-        {props.mockup === "Tidynote" && <TidynoteMockup />}
-            
+      {props.mockup === "Hypertrade" && <HypertradeMockup />}
+      {props.mockup === "Scatter" && <ScatterMockup />}
+      {props.mockup === "Tidynote" && <TidynoteMockup />}
     </div>
   );
 };

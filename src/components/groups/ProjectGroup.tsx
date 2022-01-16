@@ -6,6 +6,8 @@ import ProjectStory from "../buttons/ProjectStory";
 import SkillList from "./SkillList";
 import ProjectLinksGroup from "./ProjectLinksGroup";
 import Mockup from "./Mockup";
+import {Fade} from "react-awesome-reveal";
+
 
 const ProjectGroup: React.FC<{ project: Project }> = (props) => {
   const mockup = <Mockup mockup={props.project.name} />;
@@ -17,8 +19,9 @@ const ProjectGroup: React.FC<{ project: Project }> = (props) => {
           <h2 className={classes["header-text"]}>
             {props.project.name.toLocaleUpperCase()}
           </h2>
-
-          <p className={classes["text"]}>{props.project.description}</p>
+          <Fade>
+            <p className={classes["text"]}>{props.project.description}</p>
+          </Fade>
 
           <ProjectLinksGroup
             isMobile={props.project.isMobile}
@@ -26,7 +29,7 @@ const ProjectGroup: React.FC<{ project: Project }> = (props) => {
             videoLink={props.project.videoLink}
           />
 
-          <SkillList items={props.project.skills} />
+          <SkillList items={props.project.skills} runsOnce = {true}/>
           <ProjectStory />
         </div>
         {!props.project.right && mockup}

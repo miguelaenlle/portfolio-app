@@ -10,9 +10,9 @@ const HeaderButton: React.FC<{
   const currentClass = `${classes.button} ${props.currentPage === props.text && classes.selected}`;
   return (
     
-    <h2 className={currentClass} onClick={handleClick}>
+    <button className={currentClass} onClick={handleClick}>
       {props.text}
-    </h2>
+    </button>
   );
 };
 export default HeaderButton;

@@ -5,8 +5,8 @@ import ProjectGroup from "../components/groups/ProjectGroup";
 
 const Work = () => {
     return (
-        <Wrapper compact = {true}>
-            <SectionHeader content = {'Projects'} hasLine = {true}/>
+        <Wrapper compact = {false}>
+            <SectionHeader content = {'Work & Projects'} hasLine = {true}/>
             {projects.map(project => <ProjectGroup project = {project}/>)}
         </Wrapper>
     );
