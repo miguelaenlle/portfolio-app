@@ -1,14 +1,14 @@
+import { useContext, useEffect, useRef, useState } from "react";
 import "./App.css";
+import SizeContext from "./context/size-context";
+import { fetchLocation } from "./functions/fetch-locations";
+import { useWindowDimensions } from "./functions/get-window-dimensions";
 import About from "./pages/About";
 import ContactMe from "./pages/ContactMe";
+import HeaderWrapper from "./pages/HeaderWrapper";
 import Skills from "./pages/Skills";
 import Work from "./pages/Work";
-import "./App.css";
-import HeaderWrapper from "./pages/HeaderWrapper";
-import React, { useContext, useEffect, useRef, useState } from "react";
-import { useWindowDimensions } from "./functions/get-window-dimensions";
-import { fetchLocation } from "./functions/fetch-locations";
-import SizeContext from "./context/size-context";
+import AboutDetail from "./pages/AboutDetail";
 
 function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -74,7 +74,7 @@ function App() {
     const workLocation = fetchLocation(workRef);
     const contactLocation = fetchLocation(contactRef);
     const list: { [key: string]: number } = {
-      About: aboutLocation,
+      About: aboutLocation - 50,
       Skills: skillsLocation - 50,
       Work: workLocation - 50,
       Contact: contactLocation + 50,
@@ -106,8 +106,9 @@ function App() {
       windowDimensions={windowDimensions}
     >
       <div className={"wrapper"}>
-        <div ref={aboutRef}>
-          <About />
+        <About />
+        <div ref = {aboutRef}>
+          <AboutDetail />
         </div>
         <div ref={skillsRef}>
           <Skills />

@@ -35,7 +35,7 @@ export const vscode = new Skill('Visual Studio Code', 'vscode')
 export const postman = new Skill('Postman', 'postman')
 export const devtools = new Skill('Chrome DevTools', 'devtools')
 
-export const airtables = new Skill('Airtables & Sheets Integration', 'airtables')
+export const airtables = new Skill('Airtables Integration', 'airtables')
 
 export const skills: {[key: string]: Skill[]} = {
     "MOBILE": [

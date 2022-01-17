@@ -3,7 +3,7 @@
   align-items: center;
 }
 .row > div {
-  margin-right: 2rem;
+  margin-right: 1.25rem;
 }
 
 @media screen and (min-width: 1000px) {

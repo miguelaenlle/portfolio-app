@@ -7,7 +7,7 @@
   border-radius: 10px;
   padding: 1rem;
   width: auto;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 0rem;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
   max-width: 1500px;
@@ -15,10 +15,12 @@
 
 .skill-group-header-text {
   font-family: "Rubik", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #8d8c8c;
   margin-bottom: 0rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem
 }
 
 @media screen and (max-width: 1000px) {
