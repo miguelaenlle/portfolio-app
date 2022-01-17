@@ -1,14 +1,15 @@
 import Project from "../models/Project";
 import {
   swift,
+  swiftUI,
   react,
   firebase,
   aws,
-  node,
+  nodeJS,
   python,
   stripe,
   airtables,
-} from "./skills";
+} from "./skills-main";
 
 export const projects: Project[] = [
   new Project(
@@ -18,8 +19,9 @@ export const projects: Project[] = [
     "#",
     "#",
     true,
-    [swift, stripe, firebase, node],
-    true
+    [swiftUI, stripe, firebase, nodeJS],
+    true,
+    "Personal Project"
   ),
   new Project(
     "Hypertrade",
@@ -28,8 +30,9 @@ export const projects: Project[] = [
     "#",
     "#",
     false,
-    [react, aws, python, node],
-    false
+    [react, aws, python, nodeJS],
+    false,
+    "Personal Project"
   ),
   new Project(
     "Scatter",
@@ -38,8 +41,9 @@ export const projects: Project[] = [
     "#",
     "#",
     true,
-    [swift, firebase, airtables],
-    true
+    [swiftUI, firebase, airtables],
+    true,
+    "Freelance Work"
   ),
   new Project(
     "Tidynote",
@@ -48,7 +52,8 @@ export const projects: Project[] = [
     "#",
     "#",
     true,
-    [swift, firebase],
-    false
+    [swiftUI, firebase],
+    false,
+    "Freelance Work"
   )
 ];

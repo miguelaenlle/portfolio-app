@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { Fade } from "react-awesome-reveal";
-import SkillList from "../components/groups/SkillList";
+import AllSkills from "../components/groups/AllSkills";
+
 import SectionHeader from "../components/text/SectionHeader";
 import { aboutData } from "../constants/about-info";
-import { skills } from "../constants/skills";
 import SizeContext from "../context/size-context";
 import classes from "./Skills.module.css";
 import Wrapper from "./Wrapper";
@@ -15,17 +15,12 @@ const Skills: React.FC = (props) => {
     <Wrapper compact={true}>
       <SectionHeader content={"About Me"} hasLine={true} />
       <Fade duration={500} delay={950} triggerOnce={true}>
-        <div className = {classes["description-wrapper"]}>
+        <div className={classes["description-wrapper"]}>
           <p className={classes.text}>{aboutData.long_description}</p>
         </div>
-        <p className={classes.text}>
-          Here are a few technologies I've been working with recently:
-        </p>
       </Fade>
-      <div className={`${sizeCtx.isLarge ? classes["left-stack"] : ""}`}>
-        <SkillList items={skills[1]} runsOnce={true} wideFormat = {sizeCtx.isLarge} />
-        <SkillList items={skills[2]} runsOnce={true} wideFormat = {sizeCtx.isLarge} />
-      </div>
+      <SectionHeader content={"Skills"} hasLine={true} />
+      <AllSkills />
     </Wrapper>
   );
 };

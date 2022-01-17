@@ -8,9 +8,21 @@
     padding-top: 2.5rem;
 
 }
+@media screen and (min-width: 2000px) {
+    .wrapper {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1500px;
+    }
+    .wrapper-compact {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1500px;
+        margin-top: 7rem;
+    }
+}
 @media screen and (max-width: 1000px) {
     .wrapper {
-        overflow-x: hidden;
         padding-left: 3rem;
         padding-right: 3rem;
     }

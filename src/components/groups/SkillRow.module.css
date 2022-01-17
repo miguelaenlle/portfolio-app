@@ -1,0 +1,15 @@
+.row {
+  justify-content: flex-start;
+  align-items: center;
+}
+.row > div {
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .row {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}

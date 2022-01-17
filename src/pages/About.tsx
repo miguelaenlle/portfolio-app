@@ -26,7 +26,7 @@ const About: React.FC = (props) => {
           <Subheader content={aboutData.subheader} />
         </Fade>
         <Fade duration={offset * 2} delay={offset} triggerOnce={triggerOnce}>
-          {sizeCtx.isLarge ? (
+          {/* {sizeCtx.isLarge ? (
             <div>
               <div className={classes["left-stack"]}>
                 <p className={classes["text"]}>{aboutData.location}</p>
@@ -39,15 +39,12 @@ const About: React.FC = (props) => {
             </div>
           ) : (
             <div></div>
-          )}
+          )} */}
           <div className={classes["body-text-container"]}>
             <p className={classes["text"]}>{aboutData.description}</p>
           </div>
-          {sizeCtx.isLarge ? (
-            <SocialIcons socials={aboutData.socials} />
-          ) : (
-            <SocialIcons socials={["email", ...aboutData.socials]} />
-          )}
+          <SocialIcons socials={["email", ...aboutData.socials]} />
+          
           <ViewLink
             text={"View Resume"}
             link={aboutData.resumeLink}

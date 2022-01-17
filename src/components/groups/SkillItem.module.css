@@ -3,9 +3,9 @@
   font-size: 1.25rem;
   font-weight: 400;
   color: #4b4b4b;
+  white-space: nowrap
 }
 .icon {
-  width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.5rem;
 }
@@ -19,5 +19,10 @@
 @media screen and (max-width: 1000px) {
   .skill-text {
     font-size: 20px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .icon {
+    height: 15px;
   }
 }

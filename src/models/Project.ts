@@ -8,17 +8,19 @@ class Project {
   isMobile = true;
   skills: Skill[] = [];
   right = false;
+  category = "";
   constructor(
     name: string,
     description: string,
     supportedDevices: string[],
-    
+
     demoLink: string,
     videoLink: string,
     isMobile: boolean,
 
     skills: Skill[],
-    right: boolean
+    right: boolean,
+    category: string
   ) {
     this.name = name;
     this.description = description;
@@ -27,10 +29,11 @@ class Project {
     this.demoLink = demoLink;
     this.videoLink = videoLink;
     this.isMobile = isMobile;
-    
+
     this.skills = skills;
-    this.right = right
+    this.right = right;
+    this.category = category;
   }
 }
 
-export default Project
+export default Project;
