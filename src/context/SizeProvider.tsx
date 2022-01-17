@@ -10,7 +10,7 @@ const SizeProvider: React.FC<{}> = (props) => {
   }): void => {
     setWidth(windowDimensions.width);
     setHeight(windowDimensions.height);
-    setIsLarge(windowDimensions.width > 768);
+    setIsLarge(windowDimensions.width > 1000);
   };
   const sizeContext = {
     width,

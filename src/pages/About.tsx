@@ -11,7 +11,6 @@ import SizeContext from "../context/size-context";
 import classes from "./About.module.css";
 import Wrapper from "./Wrapper";
 
-
 const About: React.FC = (props) => {
   const offset = 500;
   const triggerOnce = true;

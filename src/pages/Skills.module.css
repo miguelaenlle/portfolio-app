@@ -19,8 +19,15 @@
   margin-right: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1000px) {
+  .description-wrapper {
+    max-width: 760px
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .text {
     font-size: 20px;
   }
 }
+

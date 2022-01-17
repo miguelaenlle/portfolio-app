@@ -11,6 +11,11 @@
   width: auto;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  max-width: 700px;
+}
+
+.wide-format {
+  width: 100%;
 }
 
 .skill-wrapper > div {

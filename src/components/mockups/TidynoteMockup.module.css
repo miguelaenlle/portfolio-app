@@ -12,12 +12,13 @@
   }
   .image-1 {
     width: 50vw;
+    max-width: 500px;
   }
   .image-2 {
     width: 20vw;
+    max-width: 266px;
   }
-  
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     .image-div-1 {
         margin-bottom: 5vh;
     }

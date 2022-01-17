@@ -24,7 +24,7 @@
     transition: all 0.5s 0s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .name-header {
         font-size: 1em;
         margin-right: 1em;

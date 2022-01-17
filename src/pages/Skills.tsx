@@ -15,14 +15,16 @@ const Skills: React.FC = (props) => {
     <Wrapper compact={true}>
       <SectionHeader content={"About Me"} hasLine={true} />
       <Fade duration={500} delay={950} triggerOnce={true}>
-        <p className={classes.text}>{aboutData.long_description}</p>
+        <div className = {classes["description-wrapper"]}>
+          <p className={classes.text}>{aboutData.long_description}</p>
+        </div>
         <p className={classes.text}>
           Here are a few technologies I've been working with recently:
         </p>
       </Fade>
       <div className={`${sizeCtx.isLarge ? classes["left-stack"] : ""}`}>
-        <SkillList items={skills[1]} runsOnce={true} />
-        <SkillList items={skills[2]} runsOnce={true} />
+        <SkillList items={skills[1]} runsOnce={true} wideFormat = {sizeCtx.isLarge} />
+        <SkillList items={skills[2]} runsOnce={true} wideFormat = {sizeCtx.isLarge} />
       </div>
     </Wrapper>
   );

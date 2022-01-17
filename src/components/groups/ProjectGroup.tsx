@@ -1,14 +1,14 @@
-import classes from "./ProjectGroup.module.css";
+import { useContext } from "react";
+import { Fade } from "react-awesome-reveal";
+import SizeContext from "../../context/size-context";
 import Project from "../../models/Project";
-import HrLine from "../text/HrLine";
 import ProjectStory from "../buttons/ProjectStory";
+import HrLine from "../text/HrLine";
+import Mockup from "./Mockup";
+import classes from "./ProjectGroup.module.css";
+import ProjectLinksGroup from "./ProjectLinksGroup";
 // import Devices from "../text/Devices";
 import SkillList from "./SkillList";
-import ProjectLinksGroup from "./ProjectLinksGroup";
-import Mockup from "./Mockup";
-import { Fade } from "react-awesome-reveal";
-import { useContext } from "react";
-import SizeContext from "../../context/size-context";
 
 const ProjectGroup: React.FC<{ project: Project }> = (props) => {
   const sizeCtx = useContext(SizeContext);
@@ -22,11 +22,13 @@ const ProjectGroup: React.FC<{ project: Project }> = (props) => {
         {!sizeCtx.isLarge && mockup}
 
         <div
-          className={
+          className={`${
             sizeCtx.isLarge
               ? classes["project-wrapper"]
               : classes["project-wrapper-small"]
-          }
+          } ${
+            props.project.right ? classes["right-based"] : classes["left-based"]
+          }`}
         >
           <h2 className={classes["header-text"]}>
             {props.project.name.toLocaleUpperCase()}
@@ -40,9 +42,16 @@ const ProjectGroup: React.FC<{ project: Project }> = (props) => {
             liveLink={props.project.demoLink}
             videoLink={props.project.videoLink}
           />
-          <ProjectStory />
 
-          <SkillList items={props.project.skills} runsOnce={true} />
+          <div className = {classes["description-wrapper"]}>
+            <ProjectStory />
+          </div>
+
+          <SkillList
+            items={props.project.skills}
+            runsOnce={true}
+            wideFormat={false}
+          />
         </div>
         {!props.project.right && sizeCtx.isLarge && mockup}
       </div>

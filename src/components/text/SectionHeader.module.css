@@ -11,7 +11,7 @@
     border: 1px solid #CCCCCC;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .header-text {
         font-size: 25px;
     }

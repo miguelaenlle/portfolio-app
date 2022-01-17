@@ -77,7 +77,7 @@ function App() {
       About: aboutLocation,
       Skills: skillsLocation - 50,
       Work: workLocation - 50,
-      Contact: contactLocation - 50,
+      Contact: contactLocation + 50,
     };
     return list;
   };
