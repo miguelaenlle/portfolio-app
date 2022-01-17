@@ -13,8 +13,9 @@ const SkillList: React.FC<{ items: Skill[]; runsOnce: boolean }> = (props) => {
             duration={offset}
             delay={(offset - 300) * index}
             triggerOnce={props.runsOnce}
+            key={`animation_${index}`}
           >
-            <SkillItem skill={item.name} icon={item.icon} />
+            <SkillItem key = {index} skill={item.name} icon={item.icon} />
           </Reveal>
         );
       })}

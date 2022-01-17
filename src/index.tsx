@@ -1,8 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import SizeProvider from "./context/SizeProvider";
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+  <SizeProvider>
+    <App />
+  </SizeProvider>,
+  document.getElementById("root")
 );

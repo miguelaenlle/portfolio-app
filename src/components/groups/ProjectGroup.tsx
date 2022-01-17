@@ -6,16 +6,28 @@ import ProjectStory from "../buttons/ProjectStory";
 import SkillList from "./SkillList";
 import ProjectLinksGroup from "./ProjectLinksGroup";
 import Mockup from "./Mockup";
-import {Fade} from "react-awesome-reveal";
-
+import { Fade } from "react-awesome-reveal";
+import { useContext } from "react";
+import SizeContext from "../../context/size-context";
 
 const ProjectGroup: React.FC<{ project: Project }> = (props) => {
+  const sizeCtx = useContext(SizeContext);
+
   const mockup = <Mockup mockup={props.project.name} />;
+
   return (
     <>
-      <div className={classes["left-stack"]}>
-        {props.project.right && mockup}
-        <div className={classes["project-wrapper"]}>
+      <div className={`${sizeCtx.isLarge ? classes["left-stack"] : ""}`}>
+        {props.project.right && sizeCtx.isLarge && mockup}
+        {!sizeCtx.isLarge && mockup}
+
+        <div
+          className={
+            sizeCtx.isLarge
+              ? classes["project-wrapper"]
+              : classes["project-wrapper-small"]
+          }
+        >
           <h2 className={classes["header-text"]}>
             {props.project.name.toLocaleUpperCase()}
           </h2>
@@ -30,9 +42,9 @@ const ProjectGroup: React.FC<{ project: Project }> = (props) => {
           />
           <ProjectStory />
 
-          <SkillList items={props.project.skills} runsOnce = {true}/>
+          <SkillList items={props.project.skills} runsOnce={true} />
         </div>
-        {!props.project.right && mockup}
+        {!props.project.right && sizeCtx.isLarge && mockup}
       </div>
       <HrLine />
     </>

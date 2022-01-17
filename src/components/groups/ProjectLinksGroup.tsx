@@ -4,9 +4,13 @@ import VideoIcon from "../icons/VideoIcon";
 import ViewLink from "../buttons/ViewLink";
 import classes from "./ProjectLinksGroup.module.css"
 
+import { useContext } from "react";
+import SizeContext from "../../context/size-context";
+
 const ProjectLinksGroup: React.FC<{isMobile: boolean, liveLink: string, videoLink: string}> = (props) => {
+    const sizeCtx = useContext(SizeContext);
     return (
-        <div className = {classes['left-stack']}>
+        <div className = {sizeCtx.isLarge ? classes['left-stack'] : ""}>
 
             <ViewLink
                 text={(props.isMobile) ? "Download Demo App (iOS)" : "Go to Demo Site"} 

@@ -10,3 +10,9 @@
 .hr-line {
     border: 1px solid #CCCCCC;
 }
+
+@media screen and (max-width: 768px) {
+    .header-text {
+        font-size: 25px;
+    }
+}

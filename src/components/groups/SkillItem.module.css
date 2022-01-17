@@ -1,17 +1,23 @@
 .skill-text {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #4B4B4B;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #4b4b4b;
 }
 .icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
 }
 .left-stack {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-text {
+    font-size: 20px;
+  }
 }

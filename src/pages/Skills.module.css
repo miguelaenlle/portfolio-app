@@ -1,21 +1,26 @@
 .left-stack {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 5rem;
-    margin-bottom: 0rem;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
 }
 
 .left-stack > div {
-    margin-right: 1rem
+  margin-right: 1rem;
 }
 
 .text {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #7E7E7E;
-    margin-right: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #7e7e7e;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 20px;
+  }
 }

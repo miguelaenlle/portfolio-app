@@ -1,5 +1,10 @@
 .image {
-    width: 100%;
+    width: 20vw;
     overflow: hidden;
+}
 
+@media screen and (max-width: 768px) {
+    .image {
+        width: 100%
+    }
 }

@@ -1,13 +1,23 @@
 .wrapper {
     padding: 15rem 5rem;
     padding-top: 10rem;
-    max-width: 1500px;
 }
 .wrapper-compact {
-    max-width: 1500px;
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 2.5rem;
-    margin-right: auto;
 
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        overflow-x: hidden;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .wrapper-compact {
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+
+    }
 }

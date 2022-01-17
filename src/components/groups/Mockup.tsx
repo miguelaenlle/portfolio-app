@@ -3,8 +3,13 @@ import RentrMockup from "../mockups/RentrMockup";
 import HypertradeMockup from "../mockups/HypertradeMockup";
 import ScatterMockup from "../mockups/ScatterMockup";
 import TidynoteMockup from "../mockups/TidynoteMockup";
+import { useContext } from "react";
+import SizeContext from "../../context/size-context";
 
-const Mockup: React.FC<{ mockup: string }> = (props) => {
+const Mockup: React.FC<{ mockup: string  }> = (props) => {
+  const sizeCtx = useContext(SizeContext);
+  const isLarge = sizeCtx.isLarge;
+
   return (
     <div className={classes["content-wrapper"]}>
       {props.mockup === "Rentr" && <RentrMockup />}

@@ -8,3 +8,9 @@
     margin-bottom: 0rem;
     
 }
+
+@media screen and (max-width: 768px) {
+    .subheader {
+        font-size: 25px;
+    }
+}

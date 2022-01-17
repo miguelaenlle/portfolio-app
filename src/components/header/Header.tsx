@@ -5,6 +5,7 @@ const Header: React.FC<{
   navBackground: string;
   selectedPage: string;
   onSelectPage: (page: string) => void;
+  windowDimensions: { [key: string]: number };
 }> = (props) => {
 
   const headerClass = `${classes.header} ${

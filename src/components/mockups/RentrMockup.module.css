@@ -1,16 +1,30 @@
-
-
-.image-1 {
-    position: relative;
-    z-index: 1;
-    width: 320px;
-    margin-right: auto;
-
+.image-div-1 {
+  position: relative;
+  z-index: 1;
+  margin-right: auto;
 }
 
+.image-div-2 {
+  position: absolute;
+  z-index: 3;
+  bottom: -2rem;
+  right: -5rem;
+}
+.image-1 {
+  width: 30vw;
+}
 .image-2 {
-    position: absolute;
-    z-index: 3;
-    bottom: -2rem;
-    right: -5rem;
+  width: 20vw;
+}
+
+@media screen and (max-width: 768px) {
+  .image-div-1 {
+    margin-bottom: 5vh;
+  }
+  .image-1 {
+    width: 45vw;
+  }
+  .image-2 {
+    width: 35vw;
+  }
 }
