@@ -14,7 +14,7 @@ import {
 export const projects: Project[] = [
   new Project(
     "Rentr",
-    "Peer-to-peer rentals marketplace built with SwiftUI & Stripe",
+    "P2P Rentals Marketplace",
     ["mobile"],
     "#",
     "#",
@@ -25,7 +25,7 @@ export const projects: Project[] = [
   ),
   new Project(
     "Hypertrade",
-    "Historical stock scanning platform built for professional daytraders",
+    "Historical stock scanning platform for professional traders",
     ["web"],
     "#",
     "#",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
   ),
   new Project(
     "Scatter",
-    "Disciplinary infraction management solution managing 2000+ students",
+    "Mobile student data access software with 2000+ students managed",
     ["mobile"],
     "#",
     "#",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
   ),
   new Project(
     "Tidynote",
-    "Homework management solution with 200+ active users",
+    "Homework management solution with 200+ users",
     ["mobile", "tablet"],
     "#",
     "#",

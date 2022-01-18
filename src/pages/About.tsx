@@ -6,6 +6,7 @@ import SocialIcons from "../components/groups/SocialIcons";
 import LinkIcon from "../components/icons/LinkIcon";
 import Header from "../components/text/Header";
 import Subheader from "../components/text/Subheader";
+import TextTransform from "../components/text/TextTransform";
 import { aboutData } from "../constants/about-info";
 import SizeContext from "../context/size-context";
 import classes from "./About.module.css";
@@ -41,7 +42,7 @@ const About: React.FC = (props) => {
             <div></div>
           )} */}
           <div className={classes["body-text-container"]}>
-            <p className={classes["text"]}>{aboutData.description}</p>
+            <p className={classes["text"]}>I'm a developer who strives to <TextTransform>solve problems</TextTransform> and create <TextTransform>amazing user experiences</TextTransform> through technology.</p>
           </div>
           <SocialIcons socials={["email", ...aboutData.socials]} />
           
