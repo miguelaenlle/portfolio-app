@@ -2,6 +2,7 @@ import Skill from "./Skill";
 class Project {
   name = "";
   description = "";
+  longDescription: string[];
   supportedDevices: string[] = [];
   demoLink = "";
   videoLink = "";
@@ -12,6 +13,7 @@ class Project {
   constructor(
     name: string,
     description: string,
+    longDescription: string[],
     supportedDevices: string[],
 
     demoLink: string,
@@ -24,6 +26,7 @@ class Project {
   ) {
     this.name = name;
     this.description = description;
+    this.longDescription = longDescription;
     this.supportedDevices = supportedDevices;
 
     this.demoLink = demoLink;

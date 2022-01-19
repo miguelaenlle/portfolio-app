@@ -15,17 +15,18 @@
   font-family: "Rubik", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
-  color: #7e7e7e;
+  color: #6a6d72;
   margin-right: 1rem;
 }
 
 .description-wrapper {
   margin-bottom: 7rem;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 1000px) {
   .description-wrapper {
-    max-width: 760px
+    max-width: 80%
   }
 }
 

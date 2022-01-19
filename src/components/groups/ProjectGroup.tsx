@@ -44,7 +44,11 @@ const ProjectGroup: React.FC<{ project: Project }> = (props) => {
           />
 
           <div className = {classes["description-wrapper"]}>
-            <ProjectStory projectCategory={props.project.category}/>
+            <ul>
+            {props.project.longDescription.map(description => 
+              <ProjectStory projectDescription={description} />
+            )}
+            </ul>
           </div>
 
           <SkillList
